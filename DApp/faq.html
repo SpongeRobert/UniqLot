@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UniqLot | A unique ETH-1 lottery!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="UniqLot is a most honest lottery! Chances are up to 9:1! Only 5% goes to a lottery organizer."/>
+	<meta name="yandex-verification" content="18469034214bbd4f" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="./css/style.css">    
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/effect.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+        <script src="./js/constants/game_constant.js" ></script>
+        <script src="./js/contract/abi1.js" ></script>
+        <script src="./js/contract/abi3.js" ></script>
+        <script src="./js/contract/abi4.js" ></script>
+        <script src="./js/eth_magic.js" ></script>
+        <script src="./js/buttons.js" ></script>
+        <script src="./js/draw_content.js" ></script>
+        
+        
+
+            
+    </head>
+    <body>
+	<div id="particles-js"></div>
+	<div id="page-wrapper">
+    <span class="pagetop">
+        <div class="bg-primary py-4">
+    <div class="container">
+        <div class="row">
+        <div class="col-4">
+            <div class="row">
+	<div class="col-1 align-self-center"><a target="_blanc" href="https://cryptolots.com"><img src="images/logo.png" id="logoimg"></a></div>
+	<div class="col-1 thin align-self-center" id="logo"><a style="text-decoration:none" id="navigation-title" target="_blanc" href="https://cryptolots.com"><b>Cryptocurrency</b><br/>lotteries</a></div>
+            </div>
+        </div>
+        <div class="col-8 text-right thin align-self-center"><b>CONTACT US</b><br/><a href="mailto:info@cryptolots.com">info@cryptolots.com</a></div>
+        </div>
+    </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary p-0">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" href="/index.html">To the Game!</a>
+            </li>
+            <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" href="https://cryptolots.com">Lottery platform</a>
+            </li>
+<!--            <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" target="_blanc" href="https://qlt.money">Become a shareholder</a>
+            </li>
+	        <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" href="/about">About us</a>
+            </li>
+-->
+        </ul>
+        </div>
+                <span class="navbar-text text-right" id="network"></span>
+    </div>
+        </nav>
+    </span>
+        <div class="row"> 
+            <div class="col-12 blancblock">
+                </div>
+        </div>
+      
+<!--  
+    <header>
+    <div>
+        <img class="logo_image" src="./images/logo.png">
+    </div>
+    </header>
+-->
+
+
+    <main role="main" class="container">
+
+	<div class="py-5 text-center text-uppercase">
+	    <div class="container phy-5">
+		<div class="row">
+		    <div class="col-md-12 text-white">
+			<h2 class="lead display-3 mb-4"><b>FAQ</b></h2>
+			<p class="lead mb-5 text-secondary">Frequently Asked Questions</p>
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="container faq">
+	    <div class="row">
+        	<div class="col-md-6 align-self-center mx-auto">
+                
+		    <h3>What do I need to Play?</h3> 
+			<p>UniqLot is a dAPP (decentralized application) that lives on the Eteher-1 Network. In order to play our game, you need a Metamask plugin or an Ether-1 wallet.</p>
+
+            		<p>If you are using <b>Chrome</b> or <b>Firefox</b>, you can download a plugin called <a class="text-secondary" target="_blank" href="https://metamask.io/">Metamask</a>, that will enable you to access and play our game and use other dAPPs.</p>
+
+            		<p>If you are using an <b>iOS</b> or <b>Android</b> device, you can use <a class="text-secondary" target="_blank" href="https://www.cipherbrowser.com/">Cipher Browser</a> to do the same.</p>
+
+			<p> Since both Metamask and Cipher are used to interact with dAPPs (and you do that with transfers) they also act as an Ether-1 wallet. You will need to transfer funds to them in order to play properly. Although a hassle, this ensures no mishandling of ETHO addresses takes place between your money and our dAPP, securing your safety.</p>
+
+    		    <h3>How to Play?</h3> 
+    			<p>There are three game variants differed by risk/winnings ratio. All of them are listed in the table:</p>
+
+	    <div class="text-white">
+	        <p class="lead mb-1 text-secondary">Game variations</p>
+	    <div class="table-responsive table-bordered table-sm bg-table-wp">
+	        <table class="table">
+	        <tbody>
+		<tr>
+		    <td>Bet = 200 ETHO</td>
+		    <td>Option 1</td>
+		    <td>Option 2</td>
+		    <td>Option 3</td>
+		</tr>
+		<tr>
+		    <td>Player 1</td>
+		    <td>800</td>
+		    <td>211</td>
+		    <td>400</td>
+		</tr>
+	            <tr>
+		    <td>Player 2</td>
+		    <td>400</td>
+		    <td>211</td>
+		    <td>400</td>
+		</tr>
+		<tr>
+		    <td>Player 3</td>
+		    <td>400</td>
+		    <td>211</td>
+		    <td>200</td>
+		</tr>
+		<tr>
+		    <td>Player 4</td>
+		    <td>200</td>
+		    <td>211</td>
+		    <td>200</td>
+		    </tr>
+		<tr>
+		    <td>Player 5</td>
+		    <td>100</td>
+		    <td>211</td>
+		    <td>200</td>
+		</tr>
+		    <tr>
+		    <td>Player 6</td>
+		    <td>&nbsp;</td>
+		    <td>211</td>
+		    <td>200</td>
+		</tr>
+		<tr>
+		    <td>Player 7</td>
+		    <td>&nbsp;</td>
+		    <td>211</td>
+		    <td>100</td>
+		</tr>
+		<tr>
+		    <td>Player 8</td>
+		    <td>&nbsp;</td>
+		    <td>211</td>
+		    <td>100</td>
+		</tr>
+		<tr>
+		    <td>Player 9</td>
+		    <td>&nbsp;</td>
+		    <td>211</td>
+		    <td>100</td>
+		</tr>
+		<tr>
+		    <td>Player 10</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		</tr>
+	        </tbody>
+	        </table>
+	    </div>
+	    </div>
+	    <br>
+			<p>The bet amount is displayed on the <span class = "text-secondary">"BET"</span> button. Choose one of three variants and press the button.</p>
+
+			<p>This will invoke the Metamask interface, that will safely handle the transaction.</p>
+
+			<p>Also, you can use your Ether-1 wallet for transferring the same amount to the contract address, displayed below the chosen variant. Note, that in this case you should set a maximum fee to 2.000.000 (two million) gas.</p>
+
+			<p>When participants number in chosen game variant will reach ten, they will be mixed in random order and the smart-contract will perform a payout automatically.</p>
+
+		    <h3>Are there fees?</h3>
+			<p> Yes. Only 5% of round pot will be taken. There are no additional fees after winning the game. 5% fee goes to creators of lottery. Variable gas price has to be paid for every Ether-1 transaction.</p>
+
+    		    <h3>How is the random selection of the beneficiary guaranteed?</h3>
+    			<p>We use a simple random algorithm, based on block hashes. It has a potential attack possibility, but there is nothing to worry about - blockchain attack is a very expensive thing and never can be paid by our lottery winnings. It's safe.</p>
+
+    		    <h3>Is this better than traditional lottery?</h3>
+	        	<p>Conventional lotteries summarize big amount of contributions from unlimited number of participants and allows to win equally big amount of money to very limited group of participants.
+	        	</p>
+	        	<p>High percentage of contribution (up to 50%) transfers to the lottery owner.
+	        	</p>
+	        	<p>Probability of winning in conventional lottery is extremely low – thousands and millions of percent shares (around 1 of 7 000 000 for big winning and 1 of 5 for compensational). Probability evaluation is very hard.
+	        	</p>
+	        	<p>Game logics cannot be checked by any participant.
+	        	</p>
+
+			<div class="row">
+			    <div class="col-md-12 text-white">
+			    <p class="lead mb-1 text-secondary"><a class="text-secondary" href="https://uniqlot.bid" target="_blank">“UniqLot”</a> operates on completely different principles:</p>
+			    <div class="container">
+				<ul>
+				    <li>number of contributions in one lot is fixed</li>
+				    <li>winning probability is very high (up to 9 to 1)</li>
+				    <li>90-95% of the contribution amount are playing out</li>
+				    <li>equally small amount of winning</li>
+				    <li>three game variants with different balance of risks and winnings</li>
+				    <li>initial code of smart contract is available at GitHub (will be available after testing), its transparency can be checked by any blockchain developer</li>
+				    <li>smart contract results are being permanently saved in Ether-1 blockchain network</li>
+				</ul>
+			    </div>
+			</div>
+
+		    <h3>Is this secure?</h3>
+
+			<p>UniqLot website is a front end for the smart contract, but does not contain any game logic. The payments and drawing of winner is handled by smart contracts on Ether-1 blockchain and cannot be compromised.</p>
+
+		    <h3>Where is the source code?</h3>
+
+			<p>You can view the smart contract at <a style="color:#FCEE21" href="https://github.com"> Github</a> (will be available soon).</p>
+		</div>
+	    </div>
+	</div>
+
+    </main>
+</div>
+    
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">© Cryptolots.com 2018</span>
+      </div>
+    </footer>
+
+    <div id="metamask_alert" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark">Metamask Alert!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="metamask_alert_message" class="modal-body text-dark">
+            <p>Please install or activate your Metamask Plugin in your browser. <br> You can't play UniqLot without Metamask installed.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </body>
+
+
+</html>

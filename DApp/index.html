@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UniqLot | A unique ETH-1 lottery!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="UniqLot is a most honest lottery! Chances are up to 9:1! Only 5% goes to a lottery organizer."/>
+	<meta name="yandex-verification" content="18469034214bbd4f" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="./css/style.css">    
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/effect.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+        <script src="./js/constants/game_constant.js" ></script>
+        <script src="./js/contract/abi1.js" ></script>
+        <script src="./js/contract/abi3.js" ></script>
+        <script src="./js/contract/abi4.js" ></script>
+        <script src="./js/eth_magic.js" ></script>
+        <script src="./js/buttons.js" ></script>
+        <script src="./js/draw_content.js" ></script>
+        
+        
+
+            
+    </head>
+    <body>
+	<div id="particles-js"></div>
+	<div id="page-wrapper">
+    <span class="pagetop">
+        <div class="bg-primary py-4">
+    <div class="container">
+        <div class="row">
+        <div class="col-4">
+            <div class="row">
+	<div class="col-1 align-self-center"><a target="_blanc" href="https://cryptolots.com"><img src="images/logo.png" id="logoimg"></a></div>
+	<div class="col-1 thin align-self-center" id="logo"><a style="text-decoration:none" id="navigation-title" target="_blanc" href="https://cryptolots.com"><b>Cryptocurrency</b><br/>lotteries</a></div>
+            </div>
+        </div>
+	<div class="col-8 text-right align-self-center"><a target="_blanc" href="https://ether1.org/"><img src="images/logo-eth1.png" id="logoimg"></a></div>
+        </div>
+    </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary p-0">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" href="/faq.html">What is it?</a>
+            </li>
+            <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" href="https://cryptolots.com">Lottery platform</a>
+            </li>
+<!--            <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" target="_blanc" href="https://qlt.money">Become a shareholder</a>
+            </li>
+-->
+	    <li class="nav-item px-5">
+	<a class="nav-link text-dark text-center" href="mailto:info@cryptolots.com">Contact us</a>
+            </li>
+
+        </ul>
+        </div>
+                <span class="navbar-text text-right" id="network"></span>
+    </div>
+        </nav>
+    </span>
+        <div class="row"> 
+            <div class="col-12 blancblock">
+                </div>
+        </div>
+      
+<!--  
+    <header>
+    <div>
+        <img class="logo_image" src="./images/logo.png">
+    </div>
+    </header>
+-->
+
+    <main role="main" class="container">
+
+              <div class="row"> 
+                    
+                  <p id="pie_button" style="height: 15px;"></p>
+	      </div>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="dont pull-center button-space">
+		    <h5>MAX win!</h5>
+                    <button type="button" id="eth_button1" class="btn btn-secondary btn-lg">Loading... <i class="fab fa-ethereum"></i></button>
+                    <h6>Bets in current round: <span id="clicked1"></span></h6>
+                  </div>
+                  <h5>Last round winners:</h5>
+                  <div class="table-responsive bg-table table-bordered table-sm">
+                  <table class="table table-striped">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Address</th>
+			<th scope="col">paid</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-dark" id="last_clickers1">
+                      <tr>
+                        <td>........</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+		<p>Contract address:<br><span id="address1"></span></p>
+	       </div>
+
+                <div class="col-sm-4">
+                  <div class="dont pull-center button-space">
+		    <h5>MAX chance 9:1!</h5>
+                    <button type="button" id="eth_button4" class="btn btn-secondary btn-lg">Loading... <i class="fab fa-ethereum"></i></button>
+                    <h6>Bets in current round: <span id="clicked4"></span></h6>
+                  </div>
+                  <h5>Last round winners:</h5>
+                  <div class="table-responsive bg-table table-bordered table-sm">
+                  <table class="table table-striped">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Address</th>
+			<th scope="col">paid</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-dark" id="last_clickers4">
+                      <tr>
+                        <td>........</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+		<p>Contract address:<br><span id="address4"></span></p>
+		</div>
+
+                <div class="col-sm-4">
+                  <div class="dont pull-center button-space">
+		    <h5>BALANCED</h5>
+                    <button type="button" id="eth_button3" class="btn btn-secondary btn-lg">Loading... <i class="fab fa-ethereum"></i></button>
+                    <h6>Bets in current round: <span id="clicked3"></span></h6>
+                  </div>
+                  <h5>Last round winners:</h5>
+                  <div class="table-responsive bg-table table-bordered table-sm">
+                  <table class="table table-striped">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Address</th>
+			<th scope="col">paid</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-dark" id="last_clickers3">
+                      <tr>
+                        <td>........</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+		<p>Contract address:<br><span id="address3"></span></p>
+                </div>
+
+    </main>
+</div>
+    
+
+    <footer class="footer">
+      <div class="container">
+	<div class="footer-info">
+	    <ul>
+		<li>
+		    <span><a href="mailto:info@cryptolots.com"><img src="images/mail-icon.png" alt=""></a></span>
+		    <a href="mailto:info@cryptolots.com"><h4>E-Mail Us</h4></a>
+		</li>
+		<li>
+		    <span><a href="https://discord.gg/Pr5rgmx"><img src="images/discord-icon.png" alt=""></a></span>
+		    <a href="https://discord.gg/Pr5rgmx"><h4>Discord</h4></a>
+		</li>
+		<li>
+		    <span><img src="images/reddit-icon.png" alt=""></span>
+		    <a href="#"><h4>Reddit (Coming Soon)</h4></a>
+		</li>
+		<li>
+		    <span><a href="https://twitter.com/Ether1Official"><img src="images/twitter-icon.png" alt=""></a></span>
+		    <a href="#"><h4>Twitter (Coming Soon)</h4></a>
+		</li>
+		<li>
+		    <span><img src="images/fb-icon.png" alt=""></span>
+		    <a href="#"><h4>Facebook (Coming Soon)</h4></a>
+		</li>
+	    </ul>
+	</div>
+        <span class="text-muted">© Cryptolots.com 2018</span>
+      </div>
+    </footer>
+
+    <div id="metamask_alert" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark">Metamask Alert!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="metamask_alert_message" class="modal-body text-dark">
+            <p>Please install or activate your Metamask Plugin in your browser. <br> You can't play UniqLot without Metamask installed.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </body>
+
+
+</html>
