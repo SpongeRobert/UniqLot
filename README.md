@@ -1,2 +1,2 @@
 # UniqLot
-Blockchain based lottery with an origonal gambling algorithm
+Blockchain based lottery with an original gaming algorithm
